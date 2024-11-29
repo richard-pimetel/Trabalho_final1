@@ -1,237 +1,125 @@
-*{
-    padding:0;
+/* Reset básico */
+* {
+    padding: 0;
     margin: 0;
-    box-sizing: 0;
-
+    box-sizing: border-box;
 }
-a{
+a {
     text-decoration: none;
 }
-ul,ol,li{
+ul, ol, li {
     list-style: none;
 }
-body{
+body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-header{
-    background: linear-gradient(to right, #D8ACED, #C489E1, #BD71E3, #8E45B2);
-    /*fixo*/
+
+/* Estilo do cabeçalho */
+header {
+    background: linear-gradient(to right, #c890e1, #a758cf, #a147ce, #9a0ee0);
     position: fixed;
-    /*vw largura do navegador*/
-    width: 100vw;
+    width: 100%;
 }
-#logo{
+#logo {
     width: 150px;
 }
-/*Para as nav ficarem em linha nao e coluna*/
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*Aumanetando a altura do header*/
     padding: 5px;
 }
-header nav a{
+header nav a {
     font-weight: bold;
     color: #211b15;
     padding: 5vh;
-    /*ficar devagar ao passar o mouse*/
     transition: background-color 1s;
 }
-/*quando passar por cima do mouse*/
-header nav a:hover{
+header nav a:hover {
     color: #eaeaea;
     background-color: #f5f5f5;
 }
 
-.grupo{
+/* Seções principais */
+.grupo {
     height: 100vh;
+    background: linear-gradient(to right, #c187dd, #b26ad6, #a746d7, #8c24c1);
 }
-
 section {
-    padding-left: 10vh;
-    padding-right: 10vh;
+    padding: 0 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-#home{
-    background: linear-gradient(to right, #D8ACED, #C489E1, #BD71E3, #8E45B2);
-}
-
-
-#caixa-roxa-Home {
+/* Caixas de conteúdo */
+.caixa-roxa-1 {
     box-shadow: 4px 4px 10px rgba(16, 16, 16, 0.1);
-    margin-top: 380px;
-    margin-left: 5px;
-    margin-right: 50px;
-    
+    margin: 20px 10px;
     width: 100%;
+    margin-top: 300px; /* Sobe ou desce */
+    margin-left: 50px; /* Move para a direita */
+    margin-right: 0px; /* Reduz a distância da direita */
     max-width: 600px;
     padding: 30px;
-    border-radius: 2px;
+    border-radius: 10px;
     font-size: 25px;
     background: linear-gradient(to right, #D8ACED, #C489E1, #BD71E3, #8E45B2);
 }
-
-
-
-#caixa-roxa-Home h1{
-    font-size: 60px;
-    margin-bottom: 25px;
-    
-    
-}
-
-#caixa-roxo-Home p{
-    margin-top: 0px;
-    
-}
-
-#tianaimg{
-    margin-top: 100px;
-    width: 650px;
-    height: auto;
-    margin-right: 100px;
-}
-
-#Cinderela{
-    background-image: linear-gradient(to bottom,#f2f5f7,#37a1ed)
-}
-
-#caixa-branca-cinderela{
+/* Caixas de conteúdo */
+.caixa-roxa-2 {
     box-shadow: 4px 4px 10px rgba(16, 16, 16, 0.1);
-    margin-top: 380px;
-    margin-left: 5px;
-    margin-right: 50px;
-    background-color: rgba(242, 245, 247, 0.1);
+    margin: 20px 10px;
     width: 100%;
+    margin-top: 300px; /* Sobe ou desce */
+    margin-left: 50px; /* Move para a direita */
+    margin-right: 0px; /* Reduz a distância da direita */
     max-width: 600px;
     padding: 30px;
-    border-radius: 2px;
+    border-radius: 10px;
     font-size: 25px;
+    background: linear-gradient(to right, #D8ACED, #C489E1, #BD71E3, #8E45B2);
 }
-
-#caixa-branca-cinderela h1{
-    font-size: 60px;
-    margin-bottom: 25px;
-    color: #6eb2c8; 
-}
-
-#caixa-branca-cinderela p{
-    margin-top: 0px;
-}
-
-#cinderela img{
-    margin-top: 100px;
-    width: 550px;
-    height: auto;
-    margin-right: 200px;
-}
-
-#Mulan{
-    background-image: linear-gradient(to bottom,#cfe1ec,#65b2d8)
-}
-
-
-#caixa-branca-mulan{
+/* Caixas de conteúdo */
+.caixa-roxa-3 {
     box-shadow: 4px 4px 10px rgba(16, 16, 16, 0.1);
-    margin-top: 480px;
-    margin-left: 5px;
-    margin-right: 50px;
-    background-color: rgba(242, 245, 247, 0.1);
+    margin: 20px 10px;
     width: 100%;
+    margin-top: 300px; /* Sobe ou desce */
+    margin-left: -500px; /* Move para a direita */
+    margin-right: 0px; /* Reduz a distância da direita */
     max-width: 600px;
     padding: 30px;
-    border-radius: 2px;
+    border-radius: 10px;
     font-size: 25px;
+    background: linear-gradient(to right, #D8ACED, #C489E1, #BD71E3, #8E45B2);
 }
-
-#caixa-branca-mulan h1{
-    font-size: 60px;
-    margin-bottom: 25px;
-    color: #3a3b8b; 
-}
-
-#caixa-branca-mulan{
-    margin-top: 0px;
-}
-
-#mulan img{
-    margin-top: 100px;
-    width: 550px;
-    height: auto;
-    margin-right: 200px;
-}
-
-#bela-adormecida{
-    background-image: linear-gradient(to bottom,#f2f5f7,#c056ae)
-}
-
-
-
-#caixa-branca-bela-adormecida{
+/* Caixas de conteúdo */
+.caixa-roxa-4 {
     box-shadow: 4px 4px 10px rgba(16, 16, 16, 0.1);
-    margin-top: 480px;
-    margin-left: 5px;
-    margin-right: 50px;
-    background-color: rgba(242, 245, 247, 0.1);
+    margin: 20px 10px;
     width: 100%;
+    margin-top: -500px; /* Sobe ou desce */
+    margin-left: 50px; /* Move para a direita */
+    margin-right: 0px; /* Reduz a distância da direita */
     max-width: 600px;
     padding: 30px;
-    border-radius: 2px;
+    border-radius: 10px;
     font-size: 25px;
+    background: linear-gradient(to right, #D8ACED, #C489E1, #BD71E3, #8E45B2);
 }
-
-#caixa-branca-bela h1{
-    font-size: 60px;    color: #6b3fa0; 
-}
-
-#caixa-branca-bela p{
-    margin-top: 0px;
-}
-
-#bela-adormecidaimg{
-    margin-top: 100px;
-    width: 580px;
-    height: auto;
-    margin-right: 200px;
-}
-
-#bella{
-    background-image: linear-gradient(to bottom,#f2f5f7,#d60d0d)
-}
-
-
-#caixa-branca-bella{
-    box-shadow: 4px 4px 10px rgba(16, 16, 16, 0.1);
-    margin-top: 480px;
-    margin-left: 5px;
-    margin-right: 50px;
-    background-color: rgba(242, 245, 247, 0.1);
-    width: 100%;
-    max-width: 600px;
-    padding: 30px;
-    border-radius: 2px;
-    font-size: 25px;
-}
-
-#caixa-branca-bella h1{
+.caixa-roxa h1 {
     font-size: 60px;
     margin-bottom: 25px;
-    color: #f4d5d5; 
+}
+.caixa-roxa p {
+    margin: 0;
 }
 
-#caixa-branca-bella p{
-    margin-top: 0px;
-}
-
-#bellaimg{
-    margin-top: 280px;
-    width: 990px;
+/* Imagens */
+img {
+    max-width: 100%;
     height: auto;
-    margin-right: 200px;
+    margin-top: 20px;
 }
